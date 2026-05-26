@@ -1,0 +1,12 @@
+# Ignore everything at repo root by default
+/*
+
+# Track repo config/docs
+!/.gitignore
+!/README.md
+
+# Track only my custom skills
+!/ralph/
+!/ralph/**
+!/zotero-cli/
+!/zotero-cli/**
