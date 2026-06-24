@@ -8,5 +8,9 @@
 # Track only my custom skills
 !/ralph/
 !/ralph/**
+!/implement-issue/
+!/implement-issue/**
+!/review-issue/
+!/review-issue/**
 !/zotero-cli/
 !/zotero-cli/**

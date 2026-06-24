@@ -1,0 +1,7 @@
+interface:
+  display_name: "Implement Issue"
+  short_description: "Implement one GitHub issue locally"
+  default_prompt: "Use $implement-issue to implement the GitHub issue number I provide in the current checkout."
+
+policy:
+  allow_implicit_invocation: false
