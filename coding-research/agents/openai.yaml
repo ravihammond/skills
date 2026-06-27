@@ -1,0 +1,7 @@
+interface:
+  display_name: "Coding Research"
+  short_description: "Research implementation approaches"
+  default_prompt: "Use $coding-research to research the best implementation approach for the coding problem I describe."
+
+policy:
+  allow_implicit_invocation: false

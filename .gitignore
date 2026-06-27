@@ -5,12 +5,10 @@
 !/.gitignore
 !/README.md
 
-# Track only my custom skills
-!/ralph/
-!/ralph/**
+# Track publishable custom skills
 !/implement-issue/
 !/implement-issue/**
+!/coding-research/
+!/coding-research/**
 !/review-issue/
 !/review-issue/**
-!/zotero-cli/
-!/zotero-cli/**
