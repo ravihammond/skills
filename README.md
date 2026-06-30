@@ -27,7 +27,6 @@ Available skills:
 - `coding-research`
 - `implement-issue`
 - `review-issue`
-- `zotero-cli`
 
 ## Install with gh skill
 
