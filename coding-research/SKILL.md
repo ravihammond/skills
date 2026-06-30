@@ -1,7 +1,6 @@
 ---
 name: coding-research
 description: Research implementation approaches for coding work; compare options and recommend the best option.
-disable-model-invocation: true
 ---
 
 # Coding Research

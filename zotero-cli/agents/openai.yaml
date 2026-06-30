@@ -1,0 +1,7 @@
+interface:
+  display_name: "Zotero CLI"
+  short_description: "Search and manage Zotero papers"
+  default_prompt: "Use $zotero-cli to search my Zotero library and summarize the papers relevant to my request."
+
+policy:
+  allow_implicit_invocation: true

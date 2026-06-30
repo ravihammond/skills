@@ -1,7 +1,6 @@
 ---
 name: implement-issue
 description: Implement one GitHub issue in the current checkout using the issue, comments, linked PRD, existing branch work, TDD, repo validation rules, and a local commit. User-invoked only; require an explicit issue number.
-disable-model-invocation: true
 ---
 
 # Implement Issue

@@ -1,7 +1,6 @@
 ---
 name: review-issue
 description: Review and repair one GitHub issue implementation in the current checkout.
-disable-model-invocation: true
 ---
 
 # Review Issue
