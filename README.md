@@ -25,8 +25,10 @@ npx skills add ravihammond/skills --skill coding-research --agent codex --global
 Available skills:
 
 - `coding-research`
+- `decision-handoff`
 - `implement-issue`
 - `review-issue`
+- `tdd`
 
 ## Install with gh skill
 

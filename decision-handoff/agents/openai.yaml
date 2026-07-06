@@ -1,0 +1,6 @@
+interface:
+  display_name: "Decision Handoff"
+  short_description: "Capture decided-only handoff text"
+  default_prompt: "Use $decision-handoff to produce a decided-only handoff for a fresh implementation session."
+policy:
+  allow_implicit_invocation: false

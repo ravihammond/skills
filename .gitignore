@@ -1,14 +1,49 @@
-# Ignore everything at repo root by default
-/*
+# OS files
+.DS_Store
+Thumbs.db
 
-# Track repo config/docs
-!/.gitignore
-!/README.md
+# Editor and IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
 
-# Track publishable custom skills
-!/implement-issue/
-!/implement-issue/**
-!/coding-research/
-!/coding-research/**
-!/review-issue/
-!/review-issue/**
+# Local environment and secrets
+.env
+.env.local
+.env.*.local
+.envrc
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build and package output
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Temporary files
+.tmp/
+tmp/
+temp/
+*.tmp
+*.bak
