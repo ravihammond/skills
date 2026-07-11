@@ -1,5 +1,7 @@
 # Skills
 
+[![skills.sh](https://skills.sh/b/ravihammond/skills)](https://skills.sh/ravihammond/skills)
+
 Public Codex skill collection from `ravihammond/skills`.
 
 ## Install with npx skills

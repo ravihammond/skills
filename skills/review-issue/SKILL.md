@@ -1,6 +1,7 @@
 ---
 name: review-issue
 description: Review and repair one GitHub issue implementation in the current checkout.
+license: MIT
 ---
 
 # Review Issue

@@ -1,6 +1,7 @@
 ---
 name: coding-research
 description: Research implementation approaches for coding work; compare options and recommend the best option.
+license: MIT
 ---
 
 # Coding Research

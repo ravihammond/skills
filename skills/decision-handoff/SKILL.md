@@ -1,6 +1,7 @@
 ---
 name: decision-handoff
 description: Produce a decision handoff that preserves explicit user decisions and relevant inspectable context for a fresh agent.
+license: MIT
 disable-model-invocation: true
 ---
 
