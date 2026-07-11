@@ -13,23 +13,31 @@ Don't mock:
 - Internal collaborators
 - Anything you control
 
-Test controls—mocks, fakes, fake servers, temporary files, environment setup, clocks, and smoke/e2e shortcuts—belong in tests or the test harness, outside production runtime paths.
+Mocks, fakes, fake servers, temporary files, env setup, and clocks belong in test files or test harness setup.
 
-## Designing for Mockability
+Smoke-test shortcuts belong in the smoke command, fixture setup, fake external service, test config, or test environment. They do not belong in production branches.
 
-At system boundaries, design interfaces that are easy to mock:
+If an e2e command is expensive or flaky, prefer harness-level controls over production conditionals.
+
+If a command needs real external effects suppressed, use test doubles outside the production code path.
+
+## Mock from Production Boundaries
+
+At system boundaries, use production interfaces that are easy to mock:
 
 **1. Use dependency injection**
 
-Pass external dependencies in rather than creating them internally: use dependency injection only for a real production boundary or when the production design naturally supports multiple implementations. Do not add clients, flags, callbacks, clocks, fetchers, or stores to production APIs solely to control tests.
+Use dependency injection only when the dependency is already a production boundary or the production design naturally needs multiple implementations. Dependency injection is for real architecture, not test convenience.
+
+Do not add optional clients, flags, callbacks, clocks, fetchers, or stores to production APIs only because tests need control.
 
 ```typescript
-// Easy to mock
+// GOOD: Production boundary dependency
 function processPayment(order, paymentClient) {
   return paymentClient.charge(order.total);
 }
 
-// Hard to mock
+// BAD: Hard-coded external dependency
 function processPayment(order) {
   const client = new StripeClient(process.env.STRIPE_KEY);
   return client.charge(order.total);

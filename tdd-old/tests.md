@@ -20,7 +20,10 @@ Characteristics:
 - Uses public API only
 - Survives internal refactors
 - Describes WHAT, not HOW
-- One observable behavior per test; multiple assertions are fine when they verify that behavior
+- One behavior per test. Multiple assertions are fine when they verify one observable behavior.
+- Names the supported contract this test uses before writing the test
+- Drives edge cases through the same supported contract as normal cases
+- May use public package APIs below the top-level user interface when those APIs are intentionally supported contracts
 
 ## Bad Tests
 
@@ -39,6 +42,9 @@ Red flags:
 
 - Mocking internal collaborators
 - Testing private methods
+- Importing private helpers, non-exported internals, incidental files, or implementation classes from tests
+- Splitting production functions merely to make smaller test targets
+- Creating a new seam without first asking whether it would exist for production users without this test
 - Asserting on call counts/order
 - Test breaks when refactoring without behavior change
 - Test name describes HOW not WHAT
